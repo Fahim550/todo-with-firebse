@@ -10,7 +10,7 @@ console.log(input)
 // create todo
 const createTodo =async (e)=>{
   e.preventDefault(e)
-  if(input===''){
+  if((input.trim().length!==0)==false){
     alert('Please enter a valid todo')
     return;
   }
